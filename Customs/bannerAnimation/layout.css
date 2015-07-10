@@ -1,0 +1,201 @@
+@font-face{
+font-family:"ITCLubalinGraphW01-BdOb";
+src:url("http://seostatic.tmp.com/resources/4862/Fonts/3560930f-87a9-41cf-becf-3f9079faddfb.eot?#iefix");
+src:url("http://seostatic.tmp.com/resources/4862/Fonts/3560930f-87a9-41cf-becf-3f9079faddfb.eot?#iefix") format("eot"),url("http://seostatic.tmp.com/resources/4862/Fonts/27b44fe8-889c-47c1-983c-883fb3d150c2.woff") format("woff"),url("http://seostatic.tmp.com/resources/4862/Fonts/5777355c-d0bb-40bd-a18f-83c8864dffcb.ttf") format("truetype"),url("http://seostatic.tmp.com/resources/4862/Fonts/05a3633f-1dd3-41bb-8c3e-8932def968f2.svg#05a3633f-1dd3-41bb-8c3e-8932def968f2") format("svg");
+}
+@font-face{
+font-family:"ITCLubalinGraphW01-Md";
+src:url("http://seostatic.tmp.com/resources/4862/Fonts/a2b62950-ad70-46e2-b2e9-e82ec9db5384.eot?#iefix");
+src:url("http://seostatic.tmp.com/resources/4862/Fonts/a2b62950-ad70-46e2-b2e9-e82ec9db5384.eot?#iefix") format("eot"),url("http://seostatic.tmp.com/resources/4862/Fonts/6e86dc78-6a2a-44b2-a48e-267dd190bc17.woff") format("woff"),url("http://seostatic.tmp.com/resources/4862/Fonts/61a5852b-4a70-4369-a205-815fa0dccca3.ttf") format("truetype"),url("http://seostatic.tmp.com/resources/4862/Fonts/5b1a4f6f-183e-4a2b-897c-02b9544ff090.svg#5b1a4f6f-183e-4a2b-897c-02b9544ff090") format("svg");
+}
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 62.5%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+
+/*-----------------------------------------------------------------
+		BANNER
+  -----------------------------------------------------------------*/
+.banner {
+	height: 300px;
+	width: 960px;
+	background: url(img/banner_bg.gif);
+	font-family: "ITCLubalinGraphW01-Md", Arial, Helvetica, sans-serif;
+}
+.bannerText {
+	padding: 73px 0 0 27px;
+	height: 227px;
+	width: 347px;
+	float: left;
+}
+.bannerText .text {
+	display: none;
+}
+.bannerText .keithText {
+	display: block;
+}
+.bannerText p {
+	color: #b22873;
+	font-size: 1.6em;
+	line-height: 20px;
+}
+p.bannerName {
+	padding: 30px 0 0 28px;
+	color: #6e99d4;
+}
+.bannerImgBox {
+	height: 300px;
+	width: 586px;
+	float: right;
+	position: relative;
+}
+.personTrigger {
+	position: absolute;
+	color: #fff;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top left;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:    0px 0px 5px rgba(0, 0, 0, 0.25);
+	box-shadow:         0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+.keith { 
+	background-image: url(img/keith.jpg);
+	top: 13px;
+	left: 110px;
+	width: 200px;
+	height: 249px;
+	font-size: 2.4em;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/keith.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/keith.jpg',sizingMethod='scale')";
+}
+.courtney { 
+	background-image: url(img/courtney.jpg);
+	top: 201px;
+	left: 33px;
+	width: 70px;
+	height: 87px;
+	font-size: 8px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/courtney.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/courtney.jpg',sizingMethod='scale')";
+}
+.alecia { 
+	background-image: url(img/alecia.jpg);
+	top: 13px;
+	left: 322px;
+	width: 87px;
+	height: 109px;
+	font-size: 10px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/alecia.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/alecia.jpg',sizingMethod='scale')";
+}
+.ashish { 
+	background-image: url(img/ashish.jpg);
+	top: 185px;
+	left: 318px;
+	width: 78px;
+	height: 97px;
+	font-size: 10px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/ashish.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/ashish.jpg',sizingMethod='scale')";
+}
+.senad { 
+	background-image: url(img/senad.jpg);
+	top: 133px;
+	left: 404px;
+	width: 70px;
+	height: 87px;
+	font-size: 12px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/senad.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/senad.jpg',sizingMethod='scale')";
+}
+.felice { 
+	background-image: url(img/felice.jpg);
+	top: 10px;
+	left: 496px;
+	width: 87px;
+	height: 109px;
+	font-size: 13px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/kaela.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/kaela.jpg',sizingMethod='scale')";
+}
+.kaela { 
+	background-image: url(img/kaela.jpg);
+	top: 168px;
+	left: 485px;
+	width: 97px;
+	height: 121px;
+	font-size: 14px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/kaela.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/kaela.jpg',sizingMethod='scale')";
+}
+.opaqueCover {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.keith .opaqueCover { display: none; background: url(img/ltBlue_bg.png); }
+.courtney .opaqueCover { background: url(img/orange_bg.png); }
+.alecia .opaqueCover { background: url(img/yellow_bg.png); }
+.ashish .opaqueCover { background: url(img/purple_bg.png); }
+.senad .opaqueCover { background: url(img/green_bg.png); }
+.felice .opaqueCover { background: url(img/blue_bg.png); }
+.kaela .opaqueCover { background: url(img/pink_bg.png); }
+.personText {
+	color: #fff;
+	font-size: 1.1em;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.62);
+	text-align: center;
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+}

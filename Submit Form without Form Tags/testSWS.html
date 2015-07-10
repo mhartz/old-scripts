@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+/* --- GENERAL CSS --- */
+*  {
+margin: 0;
+padding: 0;
+outline: 0;
+}
+
+body {
+font-family: Arial, Helvetica, Verdana, sans-serif;
+font-size: 62.5%;
+color: #757575;
+background: #eadec4 url(../job-images/4366/headerBG.jpg) repeat-x left top;
+}
+
+a {
+color: #007cc3;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.tagcloud a, .footer a, .searchWrapper .toggleSearch, .listJobs .popmenu .hide p.all {
+text-decoration: underline;
+cursor: pointer;
+}
+
+.tagcloud a:hover, .footer a:hover, .searchWrapper .toggleSearch:hover, .listJobs .popmenu .hide p.all:hover {
+text-decoration: none;
+}
+
+:focus {
+outline: 0;
+}
+
+img {
+border: 0;
+}
+
+ul {
+list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p, li, dt, dd, td, span, th {
+cursor: default;
+margin: 0;
+padding: 0;
+}
+h1, h2, h3, h4 {
+font-size: 1.8em;
+text-transform: uppercase;
+}
+h2, #list h1 {
+color: #ddd31b;
+background: #fff;
+padding: 7px 10px;
+border-top: 1px solid #c4beb1;
+border-bottom: 1px solid #c4beb1;
+font-weight: normal;
+margin-bottom: 18px;
+}
+#jobPage h1 {
+margin: 25px 0;
+color: #ddd31b;
+float: left;
+display: block;
+width: 590px;
+}
+h3 {
+color: #ddd31b;
+font-weight: normal;
+padding-bottom: 3px;
+margin-bottom: 5px;
+border-bottom: 1px solid #c4beb1;
+}
+h6 {
+font-size: 1em;
+}
+p, li {
+padding-bottom: 6px;
+}
+
+.bold {font-weight:bold;}
+.italic {font-style:italic;}
+.floatleft {float:left;}
+.floatright {float:right;}
+.OrangeText {color: #ed8339;}
+.marginSmall {margin: 5px;}
+.marginMid {margin: 10px;}
+.marginBig {margin:20px;}
+.paddingSmall {padding:5px;}
+.paddingMid {padding:10px;}
+.paddingBig {padding:20px;}
+.borderBottom {
+    border-bottom: double 2px #ccc;
+    padding-bottom: 5px;
+}
+.rail {
+float: right;
+width: 273px;
+padding: 0 23px 20px 0;
+background: #f7f5f0;
+}
+
+.pwBox {
+	width: 271px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.driver-jobs {
+	border-bottom: 2px dotted #bdb9b1;
+}
+
+.driverTitle {
+	border-bottom: 1px solid #eeebe6;
+}
+.pwBox h3 {
+	padding: 10px 0;
+	width: 100%;
+	color: #4d4021;
+	text-align: center;
+	margin-bottom: 22px;
+	font-weight: bold;
+}
+.driver-jobs h3 {
+	background: #bbb4aa;
+	border: 1px solid #bbb4aa;
+}
+.nondriver-jobs h3 {
+	background: #eeefe9;
+	border: 1px solid #988e7c;
+}
+.pwBox label {
+	color: #4d4021;
+	font-size: 12px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	display: block;
+}
+.pwBox .password {
+	border: 1px solid #e4e1da;
+	padding-left: 8px;
+	width: 263px;
+	margin-bottom: 14px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;	
+}
+.pwBox .pwBtn {
+	font-weight: bold;
+	color: #fff;
+	background: #4e3f20;
+	padding: 7px 9px;
+	border: none;
+	cursor: pointer;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+.wrongPW {
+    font-size: 10px;
+	color: red;
+	font-style: italic;	
+	margin-top: 12px;
+	display: none;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script>
+function driverSubmit() {
+	if ($('#driverPassword').val()=='1driverjobs') {
+		window.location = "https://southernwine.taleo.net/careersection/4/jobsearch.ftl?lang=en";
+		return false;
+	}
+	else {
+		$('.driverWrong').show();
+		return false;
+	}
+}
+
+function nondriverSubmit() {
+	if ($('#nondriverPassword').val()=='1nondriverjobs') {
+		window.location = "https://southernwine.taleo.net/careersection/1/jobsearch.ftl?lang=en";
+		return false;
+	}
+	else {
+		$('.nondriverWrong').show();
+		return false;
+	}	
+}
+	
+$(document).ready(function () {
+	$('#driverSubmit').click(driverSubmit);
+	$('#nondriverSubmit').click(nondriverSubmit);
+	$('#driverPassword').keypress(function(e) {
+		if(e.which == 13) {
+			driverSubmit();
+		}
+	});
+	$('#nondriverPassword').keypress(function(e) {
+		if(e.which == 13) {
+			nondriverSubmit();
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="rail">
+
+    <div class="driver-jobs pwBox">
+        <h3 class="driverTitle">Driver Jobs</h3>
+            <label for="driverPassword">Password</label>
+            <input type="password" id="driverPassword" class="password" name="driverPassword">
+            <input type="submit" id="driverSubmit" class="pwBtn" value="View Job Listings"> 
+        <p class="wrongPW driverWrong">Sorry, but the password entered is incorrect.</p>
+    </div><!--/.driver-jobs-->
+    
+    <div class="nondriver-jobs pwBox">
+        <h3 class="nonedriverTitle">Non-Driver Jobs</h3>
+            <label for="nondriverPassword">Password</label>
+            <input type="password" id="nondriverPassword" class="password" name="nondriverPassword">
+            <input type="submit" id="nondriverSubmit" class="pwBtn" value="View Job Listings">
+        <p class="wrongPW nondriverWrong">Sorry, but the password entered is incorrect.</p>
+    </div><!--/.nondriver-jobs-->
+</div><!--/.rail-->
+</body>
+</html>

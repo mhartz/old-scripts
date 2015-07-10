@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+
+	<style>
+		.changeFontSize {
+		    font-size: 62.5%;
+		    font-family: Arial;
+		}
+		.changeFontSize p {
+			font-size: 1.2em;
+		}
+	</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function() {
+		$(".toggle").toggle(function() {
+			$(".changeFontSize").css("font-size", "70%");
+		}, function() {
+			$(".changeFontSize").css("font-size", "90%");
+		}, function() {
+			$(".changeFontSize").css("font-size", "62.5%");
+		});
+	});
+	</script>
+
+
+</head>
+<body>
+	<a class="toggle">Toggle</a>
+
+<div class="changeFontSize">
+    <h1>Test 1</h1>
+    <p>I am trying to add a zoom on my image with the jQuery (brilliant) plugin...</p>
+    
+    <h1>Test 2</h1>
+    <p>I am trying to add a zoom on my image with the jQuery (brilliant) plugin...</p>
+    
+    <h1>Test 3</h1>
+    <p>I am trying to add a zoom on my image with the jQuery (brilliant) plugin...</p>
+</div>
+</body>
+</html>

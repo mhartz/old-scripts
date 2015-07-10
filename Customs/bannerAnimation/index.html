@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Banner Animation</title>
+	<link href="layout.css" rel="stylesheet"/>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="http://talentbrew.tmp.com/js/jquery-ui-1.8.22.custom.min.js"></script>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="banner">
+
+
+			<div class="bannerText">
+				<div class="text keithText">
+					<p>“12+ years at Asurion and I’m still learning and being challenged every day. I’ve been provided with an education that would be nearly impossible to duplicate elsewhere, in parallel to a career path and opportunities that are unrivaled. “ </p>
+
+					<p class="bannerName">- Keith</p>
+				</div><!--/.keithText-->
+
+
+				<div class="text courtneyText">
+					<p>“It’s not just about what I do today, it’s about what I’ll be able to do tomorrow and a year from now and even five years down the road. I’ve never worked anywhere else that has pushed me to grow like Asurion.”</p>
+
+					<p class="bannerName">- Courtney</p>
+				</div><!--/.courtneyText-->
+
+
+				<div class="text aleciaText">
+					<p>“Total Rewards is Asurion’s way of recognizing the passion &amp; success of our team members. They cultivate a rewarding environment by providing a wide range of benefits for me and my family.”</p>
+
+					<p class="bannerName">- Alecia</p>
+				</div><!--/.aleciaText-->
+
+
+				<div class="text ashishText">
+					<p>“What I love about Asurion is that we’ve been so successful over the past 18 years and still keep asking, “How can we do it better?” Everyone here strives to achieve their personal goals and Asurion’s business goals.”</p>
+
+					<p class="bannerName">- Ashish</p>
+				</div><!--/.ashishText-->
+
+
+				<div class="text senadText">
+					<p>“At Asurion, I know that good ideas drive the direction of the company and that I have the power to set incredible changes in motion.”</p>
+
+					<p class="bannerName">- Senad</p>
+				</div><!--/.senadText-->
+
+
+				<div class="text feliceText">
+					<p>“The people I work with push me to be better every day. Witnessing the thought, intellect and efforts of other members of my team and blending it with my own perspective is an awesome motivational force.”</p>
+
+					<p class="bannerName">- Felice</p>
+				</div><!--/.feliceText-->
+
+
+				<div class="text kaelaText">
+					<p>“Asurion creates an environment where you can stretch to your full potential and where people value collaboration.  It’s unique to work with so many people who bring such high energy and passion no matter what your role is in the organization.”</p>
+
+					<p class="bannerName">- Kaela</p>
+				</div><!--/.kaelaText-->
+
+			</div><!--/.bannerText-->
+
+
+			<div class="bannerImgBox">
+				
+				<div class="personTrigger keith">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Continuous Learning </span><!--/.personText-->
+				</div><!--/.keith-->
+
+
+				<div class="personTrigger courtney">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Career Growth</span><!--/.personText-->
+				</div><!--/.courtney-->
+
+
+				<div class="personTrigger alecia">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Total Rewards</span><!--/.personText-->
+				</div><!--/.alecia-->
+
+
+				<div class="personTrigger ashish">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Drive Results</span><!--/.personText-->
+				</div><!--/.ashish-->
+
+
+				<div class="personTrigger senad">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Impact</span><!--/.personText-->
+				</div><!--/.senad-->
+
+
+				<div class="personTrigger felice">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">One Team</span><!--/.personText-->
+				</div><!--/.felice-->
+
+
+				<div class="personTrigger kaela">
+					<div class="opaqueCover"></div><!--/.opaqueCover-->
+
+					<span class="personText">Passionate</span><!--/.personText-->
+				</div><!--/.kaela-->
+
+			</div><!--/.bannerImgBox-->
+
+
+		</div><!--/.banner-->
+	</div><!--/.wrapper-->
+
+<script>
+	// fades out opaque cover
+	function opaqueFadeIn() {
+		$('.opaqueCover').each(function( index ) {
+		 	$('.opaqueCover').fadeIn(1000);
+		});
+	}
+
+	// hides all texts
+	function closeTexts() {
+		$('.text').each(function( index ) {
+			$(".text").stop().hide();
+		});
+	}
+
+	function keithOpen() {
+		//opaque fade in/out
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+
+		//close all texts and fades in the current selected text
+		closeTexts();
+		$('.keithText').stop().delay(400).fadeIn(1500);
+
+		// moving animations
+		$(".keith").stop().animate({height: 249, width: 200, top: 13, left: 110, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 87, width: 70, top: 201, left: 33, fontSize: 8}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 109, width: 87, top: 13, left: 322, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 97, width: 78, top: 185, left: 318, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 87, width: 70, top: 133, left: 404, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 109, width: 87, top: 10, left: 496, fontSize: 13}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 121, width: 97, top: 168, left: 485, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function courtneyOpen() {
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+		closeTexts();
+		$('.courtneyText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 87, width: 70, top: 16, left: 257, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 249, width: 200, top: 11, left: 30, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 117, width: 94, top: 165, left: 252, fontSize: 11}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 87, width: 70, top: 60, left: 394, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 97, width: 78, top: 165, left: 398, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 87, width: 70, top: 11, left: 508, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 87, width: 70, top: 198, left: 506, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function aleciaOpen() {
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+		closeTexts();
+		$('.aleciaText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 110, width: 88, top: 177, left: 26, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 87, width: 70, top: 10, left: 26, fontSize: 8}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 249, width: 200, top: 12, left: 133, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 89, width: 71, top: 62, left: 358, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 87, width: 70, top: 199, left: 352, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 112, width: 90, top: 21, left: 485, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 92, width: 74, top: 189, left: 499, fontSize: 11}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function ashishOpen() {
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+		closeTexts();
+		$('.ashishText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 96, width: 77, top: 188, left: 27, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 105, width: 84, top: 12, left: 27, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 104, width: 83, top: 140, left: 117, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 249, width: 200, top: 26, left: 209, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 104, width: 83, top: 116, left: 424, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 87, width: 70, top: 11, left: 497, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 79, width: 63, top: 206, left: 514, fontSize: 8}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function senadOpen() {
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+		closeTexts();
+		$('.senadText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 81, width: 101, top: 184, left: 28, fontSize: 11}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 87, width: 70, top: 10, left: 26, fontSize: 8}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 115, width: 92, top: 16, left: 127, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 135, width: 108, top: 151, left: 156, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 249, width: 200, top: 23, left: 279, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 110, width: 88, top: 10, left: 488, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 90, width: 72, top: 192, left: 506, fontSize: 10}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function feliceOpen() {
+		opaqueFadeIn();
+		$(this).fadeOut(1000);
+		closeTexts();
+		$('.feliceText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 100, width: 80, top: 181, left: 59, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 146, width: 117, top: 15, left: 27, fontSize: 13}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 100, width: 80, top: 12, left: 185, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 117, width: 94, top: 141, left: 174, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 99, width: 79, top: 30, left: 502, fontSize: 12}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 249, width: 200, top: 20, left: 296, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 81, width: 65, top: 202, left: 510, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	function kaelaOpen() {
+		opaqueFadeIn();
+		$(this).stop().fadeOut(1000);
+		closeTexts();
+		$('.kaelaText').stop().delay(400).fadeIn(1500);
+		$(".keith").stop().animate({height: 131, width: 105, top: 151, left: 27, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".courtney").stop().animate({height: 100, width: 80, top: 9, left: 29, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".alecia").stop().animate({height: 100, width: 80, top: 24, left: 126, fontSize: 9}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".ashish").stop().animate({height: 105, width: 84, top: 137, left: 183, fontSize: 11}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".senad").stop().animate({height: 109, width: 87, top: 20, left: 270, fontSize: 13}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".felice").stop().animate({height: 112, width: 90, top: 173, left: 276, fontSize: 14}, {duration: 1000, easing: 'easeInOutQuart'});
+		$(".kaela").stop().animate({height: 249, width: 200, top: 22, left: 375, fontSize: 24}, {duration: 1000, easing: 'easeInOutQuart'});
+	}
+
+	$(document).ready(function() {
+		$('.keith .opaqueCover').click(keithOpen);
+		$('.courtney .opaqueCover').click(courtneyOpen);
+		$('.alecia .opaqueCover').click(aleciaOpen);
+		$('.ashish .opaqueCover').click(ashishOpen);
+		$('.senad .opaqueCover').click(senadOpen);
+		$('.felice .opaqueCover').click(feliceOpen);
+		$('.kaela .opaqueCover').click(kaelaOpen);
+	});
+</script>
+	
+</body>
+</html>
